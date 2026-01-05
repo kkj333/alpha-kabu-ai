@@ -1,0 +1,9 @@
+[project]
+name = "alpha-kabu-ai"
+version = "0.1.0"
+description = "AI for finding alpha in Japanese stock market"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.uv.workspace]
+members = ["backend", "frontend"]
