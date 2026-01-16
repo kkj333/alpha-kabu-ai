@@ -17,4 +17,6 @@ COPY . .
 # Install the project itself
 RUN uv sync --frozen || uv sync
 
-CMD ["uv", "run", "uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
+ENV PYTHONPATH=/app/src
+
+CMD ["uv", "run", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]

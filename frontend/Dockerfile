@@ -17,4 +17,4 @@ COPY . .
 # Install the project itself
 RUN uv sync --frozen || uv sync
 
-CMD ["uv", "run", "streamlit", "run", "src/frontend/app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+CMD ["uv", "run", "streamlit", "run", "src/app.py", "--server.port=8501", "--server.address=0.0.0.0"]
